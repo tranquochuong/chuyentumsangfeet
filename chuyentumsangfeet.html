@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<table>
+        <tr>
+            <th><label for="Amount">Amount</label></th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td><input type="number" id="Amount" placeholder="nhập số m"></td>
+            <td>
+                <select id="From">
+                    <option value="C">Số m</option>
+                </select>
+            </td>
+            <td>
+                <select id="To">
+                    <option  value="F">Số Feet</option>
+                </select>
+            </td>
+            <td><button onclick="ChangeKhoangcach()">Chuyển</button></td>
+        </tr>            
+    </table>
+    <br>
+    <p id="Result">Số feet là:</p>
+<script>
+    function ChangeKhoangcach()
+    {
+        let a = document.getElementById("Amount").value;
+        let Result= a*3.2808;
+        document.getElementById("Result").innerHTML =" Số feet là:" +  Result;
+    }
+</script>
+
+</body>
+</html>
+</body>
+</html
